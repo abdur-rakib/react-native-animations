@@ -3,6 +3,9 @@ import React from 'react';
 import Home from './src/components/Home/Home';
 
 const App = () => {
+  const handleChange = () => {
+    console.log('Handle change function trigerred');
+  };
   return (
     <View style={styles.container}>
       <Home />
