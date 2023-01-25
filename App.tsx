@@ -1,11 +1,11 @@
 import {StyleSheet, View} from 'react-native';
 import React from 'react';
-import LoadingIndicator from './src/components/Home/LoadingIndicator';
+import CallingAnimation from './src/components/CallingAnimation/CallingAnimation';
 
 const App = () => {
   return (
     <View style={styles.container}>
-      <LoadingIndicator />
+      <CallingAnimation />
     </View>
   );
 };
