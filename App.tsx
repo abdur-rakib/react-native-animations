@@ -1,12 +1,17 @@
-import {StyleSheet, View} from 'react-native';
+import {Button, SafeAreaView, StyleSheet, Text} from 'react-native';
 import React from 'react';
-import CallingAnimation from './src/components/CallingAnimation/CallingAnimation';
 
 const App = () => {
   return (
-    <View style={styles.container}>
-      <CallingAnimation />
-    </View>
+    <SafeAreaView style={styles.container}>
+      <Text>App</Text>
+      <Button
+        title="Welcome"
+        onPress={() => {
+          console.log('pressed');
+        }}
+      />
+    </SafeAreaView>
   );
 };
 
@@ -15,6 +20,5 @@ export default App;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'white',
   },
 });
